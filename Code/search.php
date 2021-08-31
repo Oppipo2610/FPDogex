@@ -202,15 +202,19 @@ $dupes[4] = findDuplicates($vl[4],$addrss);
   // echo "\n\n\n";
   $key_4 = hasil($vl[3], $dup[3], 30, $key_3);
   // echo "\n\n\n";
-  $keys = hasil($vl[4], $dup[4], 40, $key_4);
+  $ker = hasil($vl[4], $dup[4], 40, $key_4);
   //echo "\n\n\n";
   
-  $sKeys = array_values($keys);
-  $exp = findArrDuplicates($keys);
-  $expDup = duplicate($sKeys, $exp);
+  $q2 = array_unique($ker);
+  $q1 = array_values($q2);
   
-  hasilAkhir(array_unique($sKeys));
-  //print_r($hs);
+  // $sKeys = array_values($keys);
+  // $exp = findArrDuplicates($keys);
+  // $expDup = duplicate($sKeys, $exp);
+  hasilAkhir($q1);
+  // hasilAkhir(array_unique($sKeys));
+  // print_r($q1);
   echo "\n";
+  // print_r($key_1);
 
 ?>
