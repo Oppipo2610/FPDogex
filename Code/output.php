@@ -23,6 +23,22 @@ $cut = explode(';New_atas;', $string)[0];
 $add = explode(';', $cut);
 $dup = findDuplicates($val);
 
+// dik. jumlah
+$count = 0;
+$arr = array();
+  for($q=0; $q < count($val); $q++){
+    $str[$q] = strlen($val[$q]);
+    if($str[$q] > 33) {
+      $arr[$count] = $val[$q];
+    }
+    
+    $count++;
+  }
+
+echo "🔻 Jumlah Address \n";
+print_r(count($arr));
+sleep(3);
+echo "\n\n\n";
 echo "🔻 Cek Duplikat \n";
 print_r($dup);
 /**
